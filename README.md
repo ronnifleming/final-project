@@ -1,1 +1,2 @@
 # final-project
+I'm trying to design an algorithm that can give outfit suggestions depending on user input that specifies the dress code of the event someone is going to (such as casual, business casual, formal), the location and time of year, and the user's coloring. My hope is that the algorithm will then be able to reference other data regarding types of clothing appropriate for that dress code, the weather in that location and season, and colors that are most flattering with a certain skin tone, hair color or eye color.
