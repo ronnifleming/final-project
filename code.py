@@ -2,7 +2,7 @@
 import random
 
 #color questions and possible results
-
+#based on natural coloring
 color_results = {
     "jewel": {
         "name": "Jewel Tones",
@@ -44,14 +44,15 @@ color_questions = [
             ("Blonde", {"pastel": 1}),
             ("Red", {"earth": 1}),
             ("Black", {"jewel": 1}),
-            ("Other/dyed", {}),
+            ("Other/dyed", {"earth": 1}),
         ]
     }
 ]
 
 
 
-#jewelry results and questions 
+#jewelry results and questions
+#based on lifestyle and comfort preferences as well as stylistic choices
 
 jewelry_results = {
     "chunky": {
@@ -112,6 +113,7 @@ jewelry_questions = [
 
 
 #style results and questions
+#based on personality: determining what style of clothing best suits someone's "vibe" and lifestyle
 
 
 style_results = {
@@ -206,7 +208,7 @@ def ask_question(q_data, q_number, scores_dict):
     while True:
         choice = input("Enter the number of your choice: ")
         if choice.isdigit():
-            choice = int(choice) 
+            choice = int(choice)
             if 1 <= choice <= len(q_data["answers"]):
                 break
         print("Invalid choice. Please enter a valid number.")
@@ -300,4 +302,4 @@ if __name__ == "__main__":
     main()
 
 
-##I asked Harvard AI Sandbox to help properly format the run_section function and lines 214-216 to correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored. 
+##I asked Harvard AI Sandbox to help properly format the run_section function and lines 214-216 to correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored.
