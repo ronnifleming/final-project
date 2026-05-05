@@ -223,8 +223,8 @@ style_questions = [
         "answers": [
             ("Chunky belt", {"streetwear": 1}),
             ("Headband", {"sporty": 1}),
-            ("", {"vintage": 1}),
-            ("Mesh knit", {"streetwear": 1}),
+            ("Bermuda bag", {"vintage": 1}),
+            ("", {"boho": 1}),
         ]
     }
 
