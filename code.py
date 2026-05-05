@@ -341,28 +341,28 @@ def main():
               + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
         print(f"\n\n{res['name']}:")
-        print(f"\n{res['description']}")
+        print(f"{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
     # Jewelry
     print("\n\nJewelry Style Result(s):")
     if len(jewelry_result["top_keys"]) > 1:
-        print("You matched multiple jewelry types equally well: "
+        print("\nYou matched multiple jewelry types equally well: "
               + ", ".join(jewelry_result["top_keys"]) + ".")
     for res in jewelry_result["top_results"]:
         print(f"\n\n{res['name']}:")
-        print(f"\n{res['description']}")
+        print(f"{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
     # Clothing Style
     print("\n\nClothing Style Result(s):")
     if len(style_result["top_keys"]) > 1:
-        print("You matched multiple clothing styles equally well: "
+        print("\nYou matched multiple clothing styles equally well: "
               + ", ".join(style_result["top_keys"]) + ".")
     for res in style_result["top_results"]:
         print(f"\n\n{res['name']}:")
-        print(f"\n{res['description']}")
+        print(f"{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
