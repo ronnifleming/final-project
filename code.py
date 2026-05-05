@@ -328,9 +328,9 @@ def main():
 
 
 
-    print("\n************")
-    print(" YOUR RESULTS  ")
-    print("************")
+    print("\n****************")
+    print("  YOUR RESULTS  ")
+    print("****************")
 
 
      # Colors
