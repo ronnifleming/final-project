@@ -13,7 +13,7 @@ color_results = {
     },
     "pastel": {
         "name": "Pastel Tones",
-        "description": "Light colors like lavender, baby blue, and light pink look great on you! "
+        "description": "Light colors like lavender, baby blue, and light pink look great on you!"
     }
 }
 
@@ -64,11 +64,11 @@ jewelry_results = {
     },
     "jewel-forward": {
         "name": "Jewel-forward jewelry",
-        "description": "You want jewelry that adds a statement without feeling cumbersome. Go for jewel-forward options that allow you to customize the color that adds the most fitting sparkle to the rest of your look. "
+        "description": "You want jewelry that adds a statement without feeling cumbersome. Go for jewel-forward options that allow you to customize the color that adds the most fitting sparkle to the rest of your look."
     },
     "pearl-forward": {
         "name": "Pearl-forward jewelry",
-        "description": "You're a busy person who likes to complete their look with something elegant and timeless. Look for pearl necklaces (they can be choker-style or have pendants) and dangly pearl earrings.'"
+        "description": "You're a busy person who likes to complete their look with something elegant and timeless. Look for pearl necklaces (they can be choker-style or have pendants) and dangly pearl earrings."
     }
 }
 
@@ -285,7 +285,7 @@ def run_section(section_name, questions, results, scores):
 
 
 def main():
-    print("Welcome to style quiz! *come back and jazzify this*")
+    print("Welcome to the PERSONAL BRANDING QUIZ! By taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits ")
     print("Step 1: Find out your color palette.")
     print("Step 2: Find out your jewelry style.")
     print("Step 3: Identify the clothing style that best suits your personality!")
