@@ -129,7 +129,6 @@ jewelry_questions = [
 #style results and questions
 #based on personality: determining what style of clothing best suits someone's "vibe" and lifestyle
 
-
 style_results = {
     "chic": {
         "name": "Chic",
@@ -253,20 +252,18 @@ def ask_question(q_data, q_number, scores_dict):
         scores_dict[result_key] += pts
 
 
-#determining the result for each section based on category with the most points
+#determines the result for each section based on category with the most points
 def run_section(section_name, questions, results, scores):
     """Run one section of the quiz and return the chosen result info."""
     print(f"\n** {section_name} **")
     for i, q_data in enumerate(questions, start=1):
         ask_question(q_data, i, scores)
 
-    # Determine final result with tie-breaking
+
     max_score = max(scores.values())
     top_keys = [k for k, v in scores.items() if v == max_score]
-    #chosen_key = random.choice(top_keys) #maybe keep this, or just say they're a tie between the two
-    #chosen_result = results[chosen_key]
 
-    #builds list of result dictionaries for all top keys rather than selecting one
+    #builds list of result dictionaries for all top keys rather than selecting one - no more tie-breaking
     top_results = [
         {
             "key": key,
@@ -303,7 +300,7 @@ def main():
 
     # ---- Section 1: Colors ----
     color_result = run_section(
-        "Step 1: Your Color Palette", #not sure about this line
+        "Step 1: Your Color Palette",
         color_questions,
         color_results,
         color_scores,
@@ -326,7 +323,7 @@ def main():
     )
 
     #new:
-    # ---- Pause before showing results ----
+    #Pauses before printing results
     input("\nYay, you've completed the quiz! Press Enter to view your results...")
 
 
@@ -370,12 +367,14 @@ def main():
 
 
 
-    # ---- Ask if user wants full score breakdown ----
+    #Gives user the option of a full score breakdown
     see_breakdown = input("\nWould you like to see your full score breakdown for each section? (y/n): ")
     if see_breakdown.strip().lower().startswith("y"):
         print_score_breakdown("Color Palette", color_result["all_scores"], color_results)
         print_score_breakdown("Jewelry Style", jewelry_result["all_scores"], jewelry_results)
         print_score_breakdown("Clothing Style", style_result["all_scores"], style_results)
+
+    print("\n\nThank you for taking the PERSONAL BRANDING quiz! Have a great day!\n")
 
 if __name__ == "__main__":
     main()
