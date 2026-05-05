@@ -283,6 +283,14 @@ def run_section(section_name, questions, results, scores):
         "top_results": top_results,
     }
 
+def print_score_breakdown(title, scores, results_lookup):
+    """Nicely print all scores for a section, sorted by score descending."""
+    print(f"\n--- {title}: Full Score Breakdown ---")
+    # Sort by score (high to low), then by key for consistency
+    for key, score in sorted(scores.items(), key=lambda item: (-item[1], item[0])):
+        name = results_lookup[key]["name"]
+        print(f"{name} ({key}): {score}")
+
 
 def main():
     print("Welcome to the PERSONAL BRANDING QUIZ! By taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits ")
@@ -350,6 +358,12 @@ def main():
     if len(style_result["top_keys"]) > 1:
         print("[You matched multiple clothing styles equally well: "
               + ", ".join(style_result["top_keys"]) + ".]")
+    # ---- Ask if user wants full score breakdown ----
+    see_breakdown = input("\nWould you like to see your full score breakdown for each section? (y/n): ")
+    if see_breakdown.strip().lower().startswith("y"):
+        print_score_breakdown("Color Palette", color_result["all_scores"], color_results)
+        print_score_breakdown("Jewelry Style", jewelry_result["all_scores"], jewelry_results)
+        print_score_breakdown("Clothing Style", style_result["all_scores"], style_results)
 
 if __name__ == "__main__":
     main()
