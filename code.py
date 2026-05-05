@@ -1,5 +1,4 @@
 ##code.py
-import random
 
 #color questions and possible results
 #based on natural coloring
@@ -325,21 +324,21 @@ def main():
     for res in color_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Score: {res['score']})\n")
+        print(f"  (Your score: {res['score']})\n")
 
     # Jewelry
     print("Jewelry Style Result(s):")
     for res in jewelry_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Score: {res['score']})\n")
+        print(f"  (Your score: {res['score']})\n")
 
     # Clothing Style
     print("Clothing Style Result(s):")
     for res in style_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Score: {res['score']})\n")
+        print(f"  (Your score: {res['score']})\n")
 
     # Optional: explain ties
     if len(color_result["top_keys"]) > 1:
