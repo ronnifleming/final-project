@@ -46,7 +46,7 @@ color_questions = [
             ("Black", {"jewel": 1}),
             ("Other/dyed", {"earth": 1}),
         ]
-    }
+    },
 ]
 
 
