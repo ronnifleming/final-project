@@ -340,8 +340,8 @@ def main():
         print("You matched multiple color palettes equally well: "
               + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
-        print(f"  {res['name']}")
-        print(f"  {res['description']}")
+        print(f"\n  {res['name']}")
+        print(f"\n  {res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
