@@ -221,9 +221,9 @@ style_questions = [
     {
         "question": "Which accessory would you add?",
         "answers": [
-            ("Leather jacket", {"boho": 1}),
-            ("Adidas windbreaker", {"sporty": 1}),
-            ("Embroidered jean jacket", {"vintage": 1}),
+            ("Chunky belt", {"streetwear": 1}),
+            ("Headband", {"sporty": 1}),
+            ("", {"vintage": 1}),
             ("Mesh knit", {"streetwear": 1}),
         ]
     }
