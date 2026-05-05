@@ -340,7 +340,7 @@ def main():
         print("You matched multiple color palettes equally well: "
               + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
-        print(f"\n{res['name']}")
+        print(f"\n\n{res['name']}")
         print(f"\t{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
@@ -351,7 +351,7 @@ def main():
         print("You matched multiple jewelry types equally well: "
               + ", ".join(jewelry_result["top_keys"]) + ".")
     for res in jewelry_result["top_results"]:
-        print(f"\n{res['name']}")
+        print(f"\n\n{res['name']}")
         print(f"\t{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
@@ -361,8 +361,8 @@ def main():
         print("You matched multiple clothing styles equally well: "
               + ", ".join(style_result["top_keys"]) + ".")
     for res in style_result["top_results"]:
-        print(f"\n{res['name']}")
-        print(f"\t{res['description']}")
+        print(f"\n\n{res['name']}")
+        print(f"\n{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
