@@ -212,10 +212,10 @@ style_questions = [
     {
         "question": "Which would you layer with in cold weather?",
         "answers": [
-            ("Leather jacket", {"boho": 1}),
-            ("Adidas windbreaker", {"chic": 1}),
+            ("Leather jacket", {"chic": 1}),
+            ("Adidas windbreaker", {"sporty": 1}),
             ("Cardigan", {"vintage": 1}),
-            ("Air Jordans", {"streetwear": 1}),
+            ("Mesh knit", {"beachy": 1}),
         ]
     },
 
