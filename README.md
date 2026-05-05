@@ -4,3 +4,6 @@ Everyone talks about the importance of branding these days. A crucial part of "b
 Changes since FP Status: I added a few more questions to further specify the jewelry section as well as add some questions to the clothing section that gets at stylistic preferences the user might already have. I also removed the random library, so now if there is a tie, both options get printed instead of just one. I also edited the introduction and made some formatting changes so the output looks cleaner. The user also has the option to see their full breakdown of points in each category if they would like more expansive recommendations.
 
 As the code instructs, you simply enter the number choice of the option for each question, and then you get your results based on your input at the end of the quiz!
+
+
+I asked Harvard AI Sandbox to help properly format the run_section function and correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored.

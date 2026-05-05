@@ -352,7 +352,7 @@ def main():
     for res in jewelry_result["top_results"]:
         print(f"\n\n{res['name']}:")
         print(f"{res['description']}")
-        
+
 
     # Clothing Style
     print(f"\n\n{BOLD}Clothing Style Result(s): {RESET}")
@@ -378,5 +378,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-##I asked Harvard AI Sandbox to help properly format the run_section function and lines 214-216 to correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored.
