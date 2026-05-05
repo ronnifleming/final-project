@@ -341,7 +341,7 @@ def main():
               + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
         print(f"\n{res['name']}")
-        print(f"{res['description']}")
+        print(f"\t{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
@@ -352,7 +352,7 @@ def main():
               + ", ".join(jewelry_result["top_keys"]) + ".")
     for res in jewelry_result["top_results"]:
         print(f"\n{res['name']}")
-        print(f"{res['description']}")
+        print(f"\t{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
     # Clothing Style
@@ -362,7 +362,7 @@ def main():
               + ", ".join(style_result["top_keys"]) + ".")
     for res in style_result["top_results"]:
         print(f"\n{res['name']}")
-        print(f"{res['description']}")
+        print(f"\t{res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
 
