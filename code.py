@@ -198,7 +198,7 @@ style_questions = [
             ("SZA", {"chic": 1}),
         ]
     },
-    #some more stylistic questions that might help highlight a style that is already drawn to
+    #some more stylistic questions that might help highlight a style that is already drawn to - they already have stylistic preferences, this is helping compile them into a cohesive theme
     {
         "question": "Which pair of shoes are you picking?",
         "answers": [
@@ -208,16 +208,25 @@ style_questions = [
             ("Air Jordans", {"streetwear": 1}),
         ]
     },
-    #new:
+    #new - adding more about options they might already go for
     {
         "question": "Which would you layer with in cold weather?",
         "answers": [
             ("Leather jacket", {"chic": 1}),
             ("Adidas windbreaker", {"sporty": 1}),
-            ("Cardigan", {"vintage": 1}),
+            ("Embroidered jean jacket", {"boho": 1}),
             ("Mesh knit", {"beachy": 1}),
         ]
     },
+    {
+        "question": "Which accessory would you add?",
+        "answers": [
+            ("Leather jacket", {"chic": 1}),
+            ("Adidas windbreaker", {"sporty": 1}),
+            ("Embroidered jean jacket", {"boho": 1}),
+            ("Mesh knit", {"beachy": 1}),
+        ]
+    }
 
 ]
 
