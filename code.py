@@ -85,6 +85,7 @@ jewelry_questions = [
             ("Not at all", {"jewel-forward": 1, "chunky": 1}),
         ]
     },
+    #new (elaborates on above)
      {
         "question": "If important, what physical activities do you plan to wear it for?",
         "answers": [
@@ -197,6 +198,7 @@ style_questions = [
             ("SZA", {"chic": 1}),
         ]
     },
+    #some more stylistic questions that might help highlight a style that is already drawn to
     {
         "question": "Which pair of shoes are you picking?",
         "answers": [
@@ -205,7 +207,17 @@ style_questions = [
             ("Mary Janes", {"vintage": 1}),
             ("Air Jordans", {"streetwear": 1}),
         ]
-    }
+    },
+    #new
+    {
+        "question": "Which pair of shoes are you picking?",
+        "answers": [
+            ("Strappy sandals", {"boho": 1}),
+            ("Ankle boots", {"chic": 1}),
+            ("Mary Janes", {"vintage": 1}),
+            ("Air Jordans", {"streetwear": 1}),
+        ]
+    },
 ]
 
 
