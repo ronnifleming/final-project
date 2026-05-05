@@ -210,11 +210,11 @@ style_questions = [
     },
     #new:
     {
-        "question": "Which type of jacket would you go for?",
+        "question": "Which would you layer with in cold weather?",
         "answers": [
-            ("Strappy sandals", {"boho": 1}),
-            ("Ankle boots", {"chic": 1}),
-            ("Mary Janes", {"vintage": 1}),
+            ("Leather jacket", {"boho": 1}),
+            ("Adidas windbreaker", {"chic": 1}),
+            ("Cardigan", {"vintage": 1}),
             ("Air Jordans", {"streetwear": 1}),
         ]
     },
