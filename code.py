@@ -76,28 +76,21 @@ jewelry_results = {
 jewelry_scores = {key: 0 for key in jewelry_results.keys()}
 
 jewelry_questions = [
+    #the three below questions are based on practicality - dainty jewelry and pearl-basedtend to be best for active lifestyles, while chunky jewelrly is most impractical
     {
-        "question": "How important is it to you that you can wear your jewelry for physical activities, including swimming or exercising?",
+        "question": "How important is it to you that you can wear your jewelry for physical activities?",
         "answers": [
             ("Very", {"dainty": 1}),
             ("Somewhat", {"pearl-forward": 1}),
             ("Not at all", {"jewel-forward": 1, "chunky": 1}),
         ]
     },
-    {
-        "question": "Do you want your jewelry to make a statement or simply complement the rest of your outfit?",
+     {
+        "question": "If important, what physical activities do you plan to wear it for?",
         "answers": [
-            ("Make a statement!", {"jewel-forward": 1, "chunky": 1}),
-            ("Just add a little razzle-dazzle to the rest of my outfit.", {"dainty": 1}),
-            ("Maybe add a bit of elegance, nothing too bold.", {"pearl-forward": 1}),
-        ]
-    },
-    {
-        "question": "Which do you like better, the beach or the mountains?",
-        "answers": [
-            ("The beach", {"pearl-forward": 1}),
-            ("The mountains", {"jewel-forward": 1}),
-            ("Neither", {"chunky": 1}),
+            ("All, including swimming and contact sports", {"dainty": 1, "pearl-forward": 1}),
+            ("Moderate activities, such as walking and yoga.", {"jewel-forward": 1}),
+            ("Not important/no activities", {"chunky": 1}),
         ]
     },
     {
@@ -106,6 +99,24 @@ jewelry_questions = [
             ("I want it to announce my arrival.", {"chunky": 1}),
             ("I'm not about it.", {"dainty": 1}),
             ("A bit of jangling is fine.", {"jewel-forward": 1, "pearl-forward": 1}),
+        ]
+    },
+    #following question based on stylistic preferences; jewel-forward and chunky will be most noticeable, while dainty and pearl are more subtle
+    {
+        "question": "Do you want your jewelry to make a statement or simply complement the rest of your outfit?",
+        "answers": [
+            ("Make a statement!", {"jewel-forward": 1, "chunky": 1}),
+            ("Just add a little razzle-dazzle to the rest of my outfit.", {"dainty": 1}),
+            ("Maybe add a bit of elegance, nothing too bold.", {"pearl-forward": 1}),
+        ]
+    },
+    #this is more personality-based; which do you want your jewelry to emulate?
+    {
+        "question": "Which do you like better, the beach or the mountains?",
+        "answers": [
+            ("The beach", {"pearl-forward": 1}),
+            ("The mountains", {"jewel-forward": 1}),
+            ("Neither", {"chunky": 1}), #chunky jewelry is less reminiscent of nature than the beach or mountains, and dainty jewelry fits equally well for all three
         ]
     }
 ]
