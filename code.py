@@ -285,11 +285,11 @@ def run_section(section_name, questions, results, scores):
 
 def print_score_breakdown(title, scores, results_lookup):
     """Nicely print all scores for a section, sorted by score descending."""
-    print(f"\n--- {title}: Full Score Breakdown ---")
+    print(f"\n {title} Breakdown: ")
     # Sort by score (high to low), then by key for consistency
     for key, score in sorted(scores.items(), key=lambda item: (-item[1], item[0])):
         name = results_lookup[key]["name"]
-        print(f"{name} ({key}): {score}")
+        print(f"{name}: {score}")
 
 
 def main():
@@ -332,7 +332,7 @@ def main():
     for res in color_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Your score: {res['score']})\n")
+        #print(f"  (Your score: {res['score']})\n")
 
     # Jewelry
     print("Jewelry Style Result(s):")
