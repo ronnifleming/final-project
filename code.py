@@ -319,28 +319,38 @@ def main():
     print("         YOUR RESULTS         ")
     print("==============================")
 
-    print("\nColor Palette Result:")
-    print(f"  {color_result['name']}")
-    print(f"  {color_result['description']}")
-    print(f"  (Score: {color_result['score']})")
 
-    print("\nJewelry Style Result:")
-    print(f"  {jewelry_result['name']}")
-    print(f"  {jewelry_result['description']}")
-    print(f"  (Score: {jewelry_result['score']})")
+     # Colors
+    print("\nColor Palette Result(s):")
+    for res in color_result["top_results"]:
+        print(f"  {res['name']}")
+        print(f"  {res['description']}")
+        print(f"  (Score: {res['score']})\n")
 
-    print("\nClothing Style Result:")
-    print(f"  {style_result['name']}")
-    print(f"  {style_result['description']}")
-    print(f"  (Score: {style_result['score']})")
+    # Jewelry
+    print("Jewelry Style Result(s):")
+    for res in jewelry_result["top_results"]:
+        print(f"  {res['name']}")
+        print(f"  {res['description']}")
+        print(f"  (Score: {res['score']})\n")
 
-    # Explaining that random was used when there were ties; might be changing this
+    # Clothing Style
+    print("Clothing Style Result(s):")
+    for res in style_result["top_results"]:
+        print(f"  {res['name']}")
+        print(f"  {res['description']}")
+        print(f"  (Score: {res['score']})\n")
+
+    # Optional: explain ties
     if len(color_result["top_keys"]) > 1:
-        print("\n[Color palette tie among:", ", ".join(color_result["top_keys"]), "- one chosen at random.]")
+        print("[You matched multiple color palettes equally well: "
+              + ", ".join(color_result["top_keys"]) + ".]")
     if len(jewelry_result["top_keys"]) > 1:
-        print("[Jewelry type tie among:", ", ".join(jewelry_result["top_keys"]), "- one chosen at random.]")
+        print("[You matched multiple jewelry types equally well: "
+              + ", ".join(jewelry_result["top_keys"]) + ".]")
     if len(style_result["top_keys"]) > 1:
-        print("[Style tie among:", ", ".join(style_result["top_keys"]), "- one chosen at random.]")
+        print("[You matched multiple clothing styles equally well: "
+              + ", ".join(style_result["top_keys"]) + ".]")
 
 if __name__ == "__main__":
     main()
