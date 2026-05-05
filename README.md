@@ -6,4 +6,4 @@ Changes since FP Status: I added a few more questions to further specify the jew
 As the code instructs, you simply enter the number choice of the option for each question, and then you get your results based on your input at the end of the quiz!
 
 
-I asked Harvard AI Sandbox to help properly format the run_section function and correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored.
+I asked Harvard AI Sandbox to help properly format the run_section function and correctly count up the point tally by asking it how to design a code that had multiple steps so that the results from each step would be separately tallied up and stored. I also used it to help format the print_score_breakdown function, which I just added to my final code as an option for users to get a more comprehensive view of what their results looked like by printing their point tallies in each category.
