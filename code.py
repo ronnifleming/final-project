@@ -293,7 +293,7 @@ def print_score_breakdown(title, scores, results_lookup):
 
 
 def main():
-    print("Welcome to the PERSONAL BRANDING QUIZ! By taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits ")
+    print("Welcome to the PERSONAL BRANDING QUIZ! By taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits your natural complexion, lifestyle, and interests.")
     print("Step 1: Find out your color palette.")
     print("Step 2: Find out your jewelry style.")
     print("Step 3: Identify the clothing style that best suits your personality!")
