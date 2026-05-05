@@ -321,10 +321,16 @@ def main():
         style_results,
         style_scores,
     )
-    # ---- Final Combined Summary ----
-    print("\n==============================")
-    print("         YOUR RESULTS         ")
-    print("==============================")
+
+    #new:
+    # ---- Pause before showing results ----
+    input("\nYay, you've completed the quiz! Press Enter to view your results...")
+
+
+
+    print("\n************")
+    print(" YOUR RESULTS  ")
+    print("************")
 
 
      # Colors
