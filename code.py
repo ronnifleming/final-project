@@ -1,4 +1,7 @@
 ##code.py
+#new:
+BOLD = "\033[1m"
+RESET = "\033[0m"
 
 #color questions and possible results
 #based on natural coloring
