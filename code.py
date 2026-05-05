@@ -208,9 +208,9 @@ style_questions = [
             ("Air Jordans", {"streetwear": 1}),
         ]
     },
-    #new
+    #new:
     {
-        "question": "Which pair of shoes are you picking?",
+        "question": "Which type of jacket would you go for?",
         "answers": [
             ("Strappy sandals", {"boho": 1}),
             ("Ankle boots", {"chic": 1}),
@@ -218,6 +218,7 @@ style_questions = [
             ("Air Jordans", {"streetwear": 1}),
         ]
     },
+
 ]
 
 
