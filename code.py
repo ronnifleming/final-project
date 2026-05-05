@@ -224,7 +224,7 @@ style_questions = [
             ("Chunky belt", {"streetwear": 1}),
             ("Headband", {"sporty": 1}),
             ("Bermuda bag", {"vintage": 1}),
-            ("", {"boho": 1}),
+            ("A paisley scarf", {"boho": 1}),
         ]
     }
 
