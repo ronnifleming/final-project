@@ -284,16 +284,16 @@ def run_section(section_name, questions, results, scores):
     }
 
 def print_score_breakdown(title, scores, results_lookup):
-    """Nicely print all scores for a section, sorted by score descending."""
-    print(f"\n {title} Breakdown: ")
+    """Print all scores in descending order."""
+    print(f"\n{title} Breakdown: ")
     # Sort by score (high to low), then by key for consistency
     for key, score in sorted(scores.items(), key=lambda item: (-item[1], item[0])):
         name = results_lookup[key]["name"]
-        print(f"{name}: {score}")
+        print(f" {name}: {score}")
 
 
 def main():
-    print("Welcome to the PERSONAL BRANDING QUIZ! \nAfter taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits your natural complexion, lifestyle, and interests.")
+    print("\nWelcome to the PERSONAL BRANDING QUIZ! \nAfter taking this three-part quiz, you will be on your way to defining a personal style that uniquely suits your natural complexion, lifestyle, and interests.")
     print("\nStep 1: Find your color palette.")
     print("Step 2: Find your jewelry style.")
     print("Step 3: Determine the clothing style that best suits your personality!")
@@ -328,36 +328,39 @@ def main():
 
 
      # Colors
-    print("\nColor Palette Result(s):")
+
+    print("\n\nColor Palette Result(s):")
+    if len(color_result["top_keys"]) > 1:
+        print("You matched multiple color palettes equally well: "
+              + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
         #print(f"  (Your score: {res['score']})\n")
 
+
     # Jewelry
-    print("Jewelry Style Result(s):")
+    print("\n\nJewelry Style Result(s):")
+    if len(jewelry_result["top_keys"]) > 1:
+        print("You matched multiple jewelry types equally well: "
+              + ", ".join(jewelry_result["top_keys"]) + ".")
     for res in jewelry_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Your score: {res['score']})\n")
+        #print(f"  (Your score: {res['score']})\n")
 
     # Clothing Style
-    print("Clothing Style Result(s):")
+    print("\n\nClothing Style Result(s):")
+    if len(style_result["top_keys"]) > 1:
+        print("You matched multiple clothing styles equally well: "
+              + ", ".join(style_result["top_keys"]) + ".")
     for res in style_result["top_results"]:
         print(f"  {res['name']}")
         print(f"  {res['description']}")
-        print(f"  (Your score: {res['score']})\n")
+        #print(f"  (Your score: {res['score']})\n")
 
-    # Optional: explain ties
-    if len(color_result["top_keys"]) > 1:
-        print("[You matched multiple color palettes equally well: "
-              + ", ".join(color_result["top_keys"]) + ".]")
-    if len(jewelry_result["top_keys"]) > 1:
-        print("[You matched multiple jewelry types equally well: "
-              + ", ".join(jewelry_result["top_keys"]) + ".]")
-    if len(style_result["top_keys"]) > 1:
-        print("[You matched multiple clothing styles equally well: "
-              + ", ".join(style_result["top_keys"]) + ".]")
+
+
     # ---- Ask if user wants full score breakdown ----
     see_breakdown = input("\nWould you like to see your full score breakdown for each section? (y/n): ")
     if see_breakdown.strip().lower().startswith("y"):
