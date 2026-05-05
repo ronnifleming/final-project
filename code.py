@@ -337,7 +337,7 @@ def main():
 
     print("\n\nColor Palette Result(s):")
     if len(color_result["top_keys"]) > 1:
-        print("You matched multiple color palettes equally well: "
+        print("\nYou matched multiple color palettes equally well: "
               + ", ".join(color_result["top_keys"]) + ".")
     for res in color_result["top_results"]:
         print(f"\n\n{res['name']}:")
