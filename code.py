@@ -261,16 +261,27 @@ def run_section(section_name, questions, results, scores):
     # Determine final result with tie-breaking
     max_score = max(scores.values())
     top_keys = [k for k, v in scores.items() if v == max_score]
-    chosen_key = random.choice(top_keys) #maybe keep this, or just say they're a tie between the two
-    chosen_result = results[chosen_key]
+    #chosen_key = random.choice(top_keys) #maybe keep this, or just say they're a tie between the two
+    #chosen_result = results[chosen_key]
+
+    #builds list of result dictionaries for all top keys rather than selecting one
+    top_results = [
+        {
+            "key": key,
+            #moved these three things from the below return statement
+            "name": results[key]["name"],
+            "description": results[key]["description"],
+            "score": max_score,
+        }
+        for key in top_keys
+    ]
 
     return {
-        "key": chosen_key,
-        "score": max_score,
+
+        "max_score": max_score,
         "all_scores": scores,
         "top_keys": top_keys,
-        "name": chosen_result["name"],
-        "description": chosen_result["description"],
+        "top_results": top_results,
     }
 
 
