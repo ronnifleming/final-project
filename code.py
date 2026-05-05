@@ -334,7 +334,6 @@ def main():
 
 
      # Colors
-
     print(f"\n\n{BOLD}Color Palette Result(s): {RESET}")
     if len(color_result["top_keys"]) > 1:
         print("\nYou matched multiple color palettes equally well: "
@@ -342,7 +341,7 @@ def main():
     for res in color_result["top_results"]:
         print(f"\n\n{res['name']}:")
         print(f"{res['description']}")
-        #print(f"  (Your score: {res['score']})\n")
+
 
 
     # Jewelry
@@ -353,7 +352,7 @@ def main():
     for res in jewelry_result["top_results"]:
         print(f"\n\n{res['name']}:")
         print(f"{res['description']}")
-        #print(f"  (Your score: {res['score']})\n")
+        
 
     # Clothing Style
     print(f"\n\n{BOLD}Clothing Style Result(s): {RESET}")
@@ -363,7 +362,7 @@ def main():
     for res in style_result["top_results"]:
         print(f"\n\n{res['name']}:")
         print(f"{res['description']}")
-        #print(f"  (Your score: {res['score']})\n")
+
 
 
 
